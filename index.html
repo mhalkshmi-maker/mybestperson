@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>For My Bestie 💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffd6e8, #e0c3fc);
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.page {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(14px);
+  border-radius: 30px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+  padding: 60px;
+}
+.top-nav { display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; flex-wrap: wrap; }
+.top-nav a { text-decoration: none; }
+.top-nav button {
+  border: none; padding: 12px 20px; border-radius: 30px;
+  background: #ffe3ef; cursor: pointer; font-size: 14px; transition: all 0.3s ease;
+}
+.top-nav button:hover { background: #ffb6d5; transform: translateY(-2px); }
+.top-nav button.active { background: #ff5fa2; color: #fff; box-shadow: 0 8px 20px rgba(255,95,162,0.4); }
+.letter { line-height: 1.8; }
+</style>
+</head>
+<body>
+<!-- Invisible iframe for music -->
+<iframe src="music.html" style="display:none;" id="musicFrame"></iframe>
+
+
+<div class="page">
+  <div class="top-nav">
+    <a href="main.html"><button class="active">🏠 About Her</button></a>
+    <a href="memories.html"><button>📸 Memories</button></a>
+    <a href="video.html"><button>🎥 Video</button></a>
+    <a href="letter.html"><button>💌 Letter</button></a>
+    <a href="frame.html"><button>✨ Frame</button></a>
+  </div>
+
+  <div class="section active">
+    <h2>About My Best Friend 💕</h2>
+    <div class="letter">
+      <p>She is not just my best friend — she is my safe place, my calm in chaos, and my biggest blessing.</p>
+      <p>From small laughs to deep late-night talks, every moment with her feels real and warm. She knows my silence as much as my laughter and stays, no matter what.</p>
+      <p>Our friendship is built on trust, memories, and an unspoken promise to always choose each other. I’m endlessly grateful for her presence in my life.</p>
+      <p>This dashboard is just a tiny reflection of how special she is to me 💖</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

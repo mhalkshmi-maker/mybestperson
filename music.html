@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For My Bestie 💖</title>
+</head>
+<body>
+
+<!-- 🎵 MUSIC (PLAYS ONCE) -->
+<audio id="bgMusic" autoplay loop>
+  <source src="Happy-Birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const music = document.getElementById("bgMusic");
+  document.addEventListener("click", () => {
+    if (music.paused) music.play().catch(()=>{});
+  });
+</script>
+
+<!-- 🖼️ CONTENT FRAME -->
+<iframe 
+  name="contentFrame" 
+  src="main.html" 
+  style="width:100%;height:100vh;border:none;">
+</iframe>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Test</title>
+</head>
+<body>
+
+<h2>Click to Play Music</h2>
+<button id="playBtn">▶ Play Music</button>
+
+<audio id="bgMusic" controls>
+  <source src="Happy-Birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.getElementById("playBtn").addEventListener("click", () => {
+    const music = document.getElementById("bgMusic");
+    music.play().then(()=>{
+      alert("Music started!");
+    }).catch(err=>{
+      alert("ERROR: " + err.message);
+      console.log(err);
+    });
+  });
+</script>
+
+</body>
+</html>
+
